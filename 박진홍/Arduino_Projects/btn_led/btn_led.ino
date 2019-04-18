@@ -1,0 +1,1 @@
+int led = 2;int sw = 13;void setup() {  pinMode(sw, INPUT_PULLUP);  pinMode(led, OUTPUT);}void loop() {  int swState = digitalRead(sw);    if(swState==LOW)  {    digitalWrite(led, HIGH);  }  else  {    digitalWrite(led, L)  }}

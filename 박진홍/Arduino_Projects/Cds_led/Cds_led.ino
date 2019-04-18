@@ -1,0 +1,1 @@
+int cds = A0;int led = 13;void setup() {  Serial.begin(9600);  pinMode(led, OUTPUT);}void loop() {  int bright=analogRead(cds);    Serial.print("cds=");  Serial.println(bright);    if(bright>500)  {    digitalWrite(led, HIGH);    Serial.println("LED on");  }  else if(bright<500)  {    digitalWrite(led, LOW);    Serial.println("LED off");  }  delay(200);}
