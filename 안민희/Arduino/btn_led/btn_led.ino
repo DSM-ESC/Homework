@@ -1,0 +1,1 @@
+int led =5;int sw =8;void setup() {  // put your setup code here, to run once:  pinMode(led, OUTPUT);  pinMode(sw,INPUT_PULLUP);}void loop() {  // put your main code here, to run repeatedly:  if(digitalRead(sw)==LOW){    digitalWrite(led, HIGH);  }  else{    digitalWrite(led, LOW);  }}/**/void setup() {    }void loop() {    }
